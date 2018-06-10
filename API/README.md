@@ -10,7 +10,7 @@ Method:
 Request:
     url: /api/validAdmin/
     data: {
-        user: 'xxx',
+        userName: 'xxx',
         password: 'xxx',
         /*0代表登陆的是管理员，1代表登陆的是老师及学生用户*/
         type: 0 | 1 
@@ -36,7 +36,7 @@ Response:
         dataList: [
             {   
                 id: 12,
-                user: 'xxx',
+                userName: 'xxx',
                 password: 'ccc',
                 type: 0,
                 createTime: '2012-01-17'
@@ -62,10 +62,10 @@ Method:
 Request: 
     url: /api/account/add
     data: {
-        user: 'xxx',
+        userName: 'xxx',
         password: 'xxx',
         type: 0, 
-        createTime: '2014-02-21'
+        //createTime: '2014-02-21'
     }
 
 Response:
@@ -74,7 +74,7 @@ Response:
         status: 'success' | 'error',
         newData: {
             id: 23,
-            user: 'xxx',
+            userName: 'xxx',
             password: 'xxx',
             type: 0,
             createTime: '2014-02-21'
